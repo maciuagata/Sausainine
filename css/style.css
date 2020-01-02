@@ -1,0 +1,68 @@
+html, body {
+    height: 100%;
+}
+
+/*  Animations  */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(+100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(+100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.btn, .logo, li {
+    transition: transform .25s;
+}
+
+.btn:hover, .navbar-brand:hover .logo, li:hover {
+    transform: scale(1.1);
+}
+
+.slide-left {
+    animation: .5s ease-out 0s 1 slideInFromLeft;
+}
+
+.slide-right {
+    animation: .25s ease-out 0s 1 slideInFromRight;
+}
+
+.slide-top {
+    animation: .5s ease-out 0s 1 slideInFromTop;
+}
+
+.slide-bottom {
+    animation: .5s ease-out 0s 1 slideInFromBottom;
+}
+
+select {
+    width: inherit;
+}
